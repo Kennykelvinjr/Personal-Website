@@ -1,0 +1,65 @@
+/* Main CSS file for the personal website (optional but good for practice) */
+:root {
+  --color-primary-light: #CCD5AE;
+  --color-secondary-light: #E9EDC9;
+  --color-background-main: #FEFAE0;
+  --color-accent-tan: #FAEDCD;
+  --color-dark-brown: #D4A373;
+  --color-text-dark: #333;
+  --color-text-heading: var(--color-dark-brown);
+  --color-link: var(--color-dark-brown);
+  --color-link-hover: #A87D54;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and global font styles */
+body {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  line-height: 1.6;
+  color: var(--color-text-dark);
+  background-color: var(--color-background-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Basic container styling for the main content */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  color: var(--color-text-heading);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--color-link-hover);
+}
+
+/* Vue Router Transition Styles */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
